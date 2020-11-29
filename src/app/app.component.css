@@ -30,3 +30,13 @@ app-progress {
     margin: 1em auto;
     width: calc(28rem - 150px);
 }
+
+.clear {
+    clear: both;
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

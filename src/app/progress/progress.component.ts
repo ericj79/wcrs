@@ -50,7 +50,6 @@ export class ProgressComponent implements OnInit, OnDestroy {
           const percent = Math.min(completed / goal, 1);
           const height = percent * ProgressComponent.maxLen;
           this.y2Subject.next(ProgressComponent.yStart - height);
-          console.log(percent, ProgressComponent.yStart - height);
         }
       });
   }

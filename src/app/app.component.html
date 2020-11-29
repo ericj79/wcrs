@@ -1,10 +1,15 @@
 <div class="main">
     <h1>West Chester Ward Relief Society Family History Challenge</h1>
 
+
+    <h2 class="clear" *ngIf="metGoal$ | async" [@inOutAnimation]>
+        🎉 We did it!! We reached our Goal!! Please keep logging your hours during the month so we can see how far we can go! 🎉
+    </h2>
+
     <app-progress></app-progress>
 
     <p>
-        Help us reach our goal of 100 hours doing family history work for the month of December! It’s a Christmas present that we can give to our ancestors!!
+        Help us reach our goal of {{goal$ | async}} hours doing family history work for the month of December! It’s a Christmas present that we can give to our ancestors!!
     </p>
 
     <p>
