@@ -10,11 +10,11 @@ import { GoalData } from '../models/entries';
   styleUrls: ['./progress.component.css'],
 })
 export class ProgressComponent implements OnInit, OnDestroy {
-  static readonly maxLen = 8350;
-  static readonly y1 = 3500;
+  static readonly maxLen = 830;
+  static readonly yStart = 925;
 
   private destructorSubject = new Subject<boolean>();
-  private y2Subject = new BehaviorSubject<number>(ProgressComponent.y1);
+  private y2Subject = new BehaviorSubject<number>(ProgressComponent.yStart);
   private goalSubject = new BehaviorSubject<number>(0);
   private countSubject = new BehaviorSubject<number>(0);
   public y2$: Observable<number>;
@@ -49,7 +49,8 @@ export class ProgressComponent implements OnInit, OnDestroy {
         if (goal > 0) {
           const percent = Math.min(completed / goal, 1);
           const height = percent * ProgressComponent.maxLen;
-          this.y2Subject.next(height + ProgressComponent.y1);
+          this.y2Subject.next(ProgressComponent.yStart - height);
+          console.log(percent, ProgressComponent.yStart - height);
         }
       });
   }

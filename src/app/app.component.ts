@@ -26,5 +26,6 @@ export class AppComponent {
 
   onClear() {
     this.db.clearEntries();
+    this.noObjects = false;
   }
 }

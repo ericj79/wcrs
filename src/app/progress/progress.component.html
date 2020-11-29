@@ -1,11 +1,17 @@
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="405" width="125" viewBox="0 0 125 1296" preserveAspectRatio="xMidYMid meet">
-  <g transform="matrix(0.1,0,0,-0.1,-256.27927,1290.4404)" fill="#000000" stroke="none" id="g6">
-    <path
-      d="m 3033,12785 c -93,-17 -162,-40 -248,-83 -255,-127 -432,-345 -507,-623 l -23,-84 -5,-4232 -5,-4232 -85,-56 c -437,-292 -714,-707 -821,-1233 -27,-130 -36,-423 -19,-570 94,-797 686,-1452 1471,-1626 990,-219 1982,385 2238,1365 50,191 56,247 56,489 0,239 -8,301 -61,499 -91,337 -299,673 -560,903 -85,76 -213,171 -281,209 l -43,24 v 518 517 h 325 v 240 h -325 v 765 765 h 325 v 240 h -325 v 765 765 h 325 l 3,242 -323,3 -3,763 -2,762 h 325 v 250 h -325 v 913 c 0,850 -2,918 -19,1002 -38,186 -127,345 -270,485 -219,213 -524,309 -818,255 z m 340,-349 c 189,-60 340,-209 405,-400 l 27,-81 3,-4312 2,-4312 118,-69 c 310,-184 502,-381 646,-664 254,-498 227,-1079 -72,-1543 -228,-355 -580,-595 -1005,-687 -150,-32 -446,-32 -600,0 -484,102 -870,399 -1092,841 -210,419 -208,947 5,1372 142,285 353,504 654,680 l 126,73 v 4266 c 0,2729 4,4289 10,4333 21,140 75,249 178,352 67,67 179,133 262,153 25,6 54,14 65,16 38,9 220,-3 268,-18 z"
-      id="path2" />
-    <path fill="#ed1b24"
-      d="M 2830,3589.1722 V 3183 l -77,-28 c -436,-154 -766,-531 -864,-985 -33,-153 -33,-402 -1,-549 122,-545 540,-950 1082,-1047 125,-22 335,-22 460,0 418,75 778,343 967,721 54,107 87,200 114,326 33,148 33,397 0,549 -98,454 -428,831 -863,985 l -78,28 v 406.1722 z" />
-    <line x1="3200" x2="3200" y1="3500" [attr.y2]="y2$ | async" stroke="#ed1b24" stroke-width="740" stroke-linecap="round" />
-    <text x="-5000" transform="scale(-1, 1) translate(0,500)" class="text" [attr.y]="(y2$ | async)">{{count$ | async}}</text>
-
-  </g></svg>
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="405" width="150" viewBox="0 0 150 1296" preserveAspectRatio="xMidYMid meet">
+  <g>
+    <path stroke-linejoin="round" stroke-width="35" stroke="#2d2d2d" fill="none" d="M -15, 900 l 0, -805 a 77.5 77.5 180 1 1 155 0 l 0, 855 a 170 170 270 1 1 -155 0 z"/>
+    <circle fill="#ed1b24" cx="62.5" cy="1100" r="140" />
+    <line x1="62.5" x2="62.5" y1="975" y2="925" stroke="#ed1b24" stroke-width="95" />
+    <line x1="150" x2="175" y1="717.5" y2="717.5" stroke="#2d2d2d" stroke-width="25" stroke-linecap="round" />
+    <line x1="150" x2="175" y1="510" y2="510" stroke="#2d2d2d" stroke-width="25" stroke-linecap="round" />
+    <line x1="150" x2="175" y1="302.5" y2="302.5" stroke="#2d2d2d" stroke-width="25" stroke-linecap="round" />
+    <line x1="150" x2="175" y1="95" y2="95" stroke="#2d2d2d" stroke-width="25" stroke-linecap="round" />
+    <text x="190" transform="translate(0,20)" class="percents" y="717.5">25%</text>
+    <text x="190" transform="translate(0,20)" class="percents" y="510">50%</text>
+    <text x="190" transform="translate(0,20)" class="percents" y="302.5">75%</text>
+    <text x="190" transform="translate(0,20)" class="percents" y="95">100%</text>
+  </g>
+    <line x1="62.5" x2="62.5" y1="925" [attr.y2]="y2$ | async" stroke="#ed1b24" stroke-width="95" stroke-linecap="round" />
+    <text x="62.5" text-anchor="middle" transform="translate(0,20)" class="text" [attr.y]="y2$ | async">{{count$ | async}}</text>
+</svg>

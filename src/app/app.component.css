@@ -1,4 +1,32 @@
+.main {
+    max-width: 30rem;
+    margin: 2em auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 229%;
+    font-weight: 500;
+}
+
 app-progress {
     float: left;
-    max-height: 200px;
+    height: 100%;
+    margin-right: 2em;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.center button {
+    margin: .25rem;
+}
+
+.temple {
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem 0.25rem #1d1d1d;
+    margin: 1em auto;
+    width: calc(28rem - 150px);
 }

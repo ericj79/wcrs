@@ -1,11 +1,25 @@
-<h1>{{ title }}</h1>
+<div class="main">
+    <h1>West Chester Ward Relief Society Family History Challenge</h1>
 
-<app-progress></app-progress>
+    <app-progress></app-progress>
 
-<p>
-    Some text goes here.
-</p>
+    <p>
+        Help us reach our goal of 100 hours doing family history work for the month of December! It’s a Christmas present that we can give to our ancestors!!
+    </p>
 
-<button mat-raised-button (click)="onAdd()">+1 hour</button>
-<button mat-raised-button [disabled]="noObjects" (click)="onUndo()">undo (-1)</button>
-<button mat-raised-button (click)="onClear()">Clear All</button>
+    <p>
+        When you’ve completed an hour, hit the button below to add to our total.
+    </p>
+
+    <p>
+        Any questions: Contact Sarah Jensen <a href="mailto:sarahj80@gmail.com">sarahj80@gmail.com</a>
+    </p>
+    <div class="center">
+        <button mat-raised-button color="primary" (click)="onAdd()">+1 hour</button>
+        <button mat-raised-button [disabled]="noObjects" color="accent" (click)="onUndo()">undo (-1)</button>
+        <button mat-raised-button (click)="onClear()">Clear All</button>
+    </div>
+    <div class="center">
+        <img src="assets/temple.jpg" class="temple" />
+    </div>
+</div>
