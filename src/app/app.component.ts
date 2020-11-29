@@ -17,8 +17,11 @@ declare global {
   animations: [
     trigger('inOutAnimation', [
       transition(':enter', [
-        style({ height: 0, opacity: 0 }),
-        animate('1s ease-in-out', style({ height: 100, opacity: 1 })),
+        style({ height: 0, opacity: 0, color: '#b3000c' }),
+        animate(
+          '1s ease-in-out',
+          style({ height: 100, opacity: 1, color: '#fff' })
+        ),
       ]),
     ]),
   ],

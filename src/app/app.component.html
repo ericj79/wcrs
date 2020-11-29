@@ -3,7 +3,7 @@
 
 
     <h2 class="clear" *ngIf="metGoal$ | async" [@inOutAnimation]>
-        🎉 We did it!! We reached our Goal!! Please keep logging your hours during the month so we can see how far we can go! 🎉
+        🎉 We did it!! We reached our Goal!! We are up to {{count$ | async}} hours. Please keep logging your hours during the month so we can see how far we can go! 🎉
     </h2>
 
     <app-progress></app-progress>

@@ -3,12 +3,13 @@
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // **Be sure that you only ever include this mixin once!**
+$mat-red: ( 300: #ed4936, 700: #b3000c, 900: #7c0000, contrast: (300: $light-primary-text, 700: $light-primary-text, 900: $light-primary-text));
+$mat-gre: ( 300: #5df057, 700: #00bc22, 900: #008a00, contrast: (300: $light-primary-text, 700: $light-primary-text, 900: $light-primary-text));
 @include mat-core();
 // Define an alternate dark theme.
-$dark-primary: mat-palette($mat-purple);
-$dark-accent: mat-palette($mat-green, A200, A100, A400);
-$dark-warn: mat-palette($mat-deep-orange);
-$dark-theme: mat-dark-theme(( color: ( primary: $dark-primary, accent: $dark-accent, warn: $dark-warn, )));
+$dark-primary: mat-palette($mat-red, 700, 900, 300);
+$dark-accent: mat-palette($mat-gre, 700, 900, 300);
+$dark-theme: mat-dark-theme(( color: ( primary: $dark-primary, accent: $dark-accent)));
 @include angular-material-color($dark-theme);
 
 /* You can add global styles to this file, and also import other style files */
@@ -30,5 +31,5 @@ body {
 }
 
 a {
-    color: #9c27b0;
+    color: #fff;
 }

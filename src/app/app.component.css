@@ -34,9 +34,3 @@ app-progress {
 .clear {
     clear: both;
 }
-
-canvas {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
